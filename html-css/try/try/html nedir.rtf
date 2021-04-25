@@ -1,0 +1,427 @@
+{\rtf1\ansi\ansicpg1254\deff0\nouicompat\deflang1055{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset238 Calibri;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang31 Temel HTML   \f1\u304?leri HTML   Basamakl\u305? Stil Sayfalar\u305? (CSS)   Web Renkleri\par
+HTML'ye Giri\'ba\par
+Basit HTML Etiketleri\par
+Metinler\par
+Linkler\par
+Resim Ekleme\par
+Listeler\par
+Tablolar\par
+Formlar\par
+HTML'YE G\u304?R\u304?\'aa\par
+HTML, HyperText Markup Language, taray\u305?c\u305? (browser)'lardan g\f0\lang1033\'f6rebilece\f1\u287?imiz (Internet Explorer, Netscape gibi) internet dok\f0\'fcmanlar\f1\u305?n\u305? yaratmaya yarayan bir i\'baaretleme dilidir. \u304?nternet \f0\'fczerindeki t\'fcm sayfalar\f1\u305?n kayna\u287?\u305? HTML'dir. Taray\u305?c\u305? olmadan HTML kodlar\u305? bir\'baey ifade etmez.\par
+\par
+HTML dok\f0\'fcmanlar\f1\u305? herhangi bir yaz\u305? edit\f0\'f6r\'fc ile d\'fczenlenip *.htm, *.HTML, *.sHTML gibi uzant\f1\u305?larla kaydedilir. Bunun i\f0\'e7in notepad, pico, wordpad gibi edit\'f6rler yeterlidir. Bunlar\f1\u305?n yan\u305?nda Frontpage, Dreamweaver, Homesite gibi bu i\'ba i\f0\'e7in haz\f1\u305?rlanm\u305?\'ba ve kodlamay\u305? kolayla\'bat\u305?ran programlar da vard\u305?r.\par
+\par
+Her HTML dok\f0\'fcman\f1\u305? <HTML> ile ba\'balar ve </HTML> ile biter. <> \'baeklinde g\f0\'f6r\'fclen komutlara etiket (tag) ad\f1\u305? verilir. Bir HTML dok\f0\'fcman\f1\u305? iki ana k\u305?s\u305?mdan olu\'bamaktad\u305?r:<head> . . . </head> etiketi aras\u305?nda yer alan Ba\'bal\u305?k b\f0\'f6l\'fcm\'fc; <body> . . . </body> etiketleri aras\f1\u305?nda yer alan G\f0\'f6vde B\'f6l\'fcm\'fc. Ba\f1\'bal\u305?k b\f0\'f6l\'fcm\'fc i\'e7ine <title>. . . </title> etiketi konulur. title, taray\f1\u305?c\u305?m\u305?z\u305?n en \f0\'fcst\'fcnde g\'f6z\'fck\'fcr ve olu\f1\'baturulan sayfan\u305?n ba\'bal\u305?\u287?\u305?d\u305?r.\par
+\par
+\f0\'d6rnek:\par
+\par
+\par
+\par
+E\f1\u287?er haz\u305?rlanan sayfa T\f0\'fcrk\'e7e i\'e7erikli ise T\'fcrk\'e7e karakterlerin (\'e7, \f1\u287?, \u305?, , \'ba, \f0\'f6, \'fc) d\'fczg\'fcn g\'f6r\'fcnmesi i\'e7in Ba\f1\'bal\u305?k k\u305?sm\u305? i\f0\'e7erisine a\f1\'baa\u287?\u305?daki meta etiketi eklenir. Meta etiketleri i\f0\'e7in detayl\f1\u305? bilgiye buradan ula\'baabilirsiniz.\par
+\par
+<meta http-equiv="Content-Type" content="text/HTML; charset=iso-8859-9">\par
+\par
+title etiketi ile ba\'bal\u305?\u287?\u305? belirttikten sonra Ba\'bal\u305?k b\f0\'f6l\'fcm\'fc kapat\f1\u305?l\u305?r ve ana k\u305?s\u305?m olan G\f0\'f6vde' ye ge\'e7ilir. Sayfam\f1\u305?zda g\f0\'f6r\'fcnt\'fclemek istedi\f1\u287?imiz b\f0\'fct\'fcn bilgileri G\'f6vde k\f1\u305?sm\u305?na koyar\u305?z.\par
+\par
+Herhangi bir web sayfas\u305?n\u305?n HTML kodunu g\f0\'f6rmek istedi\f1\u287?imiz zaman, farenin sa\u287? tu\'bauna t\u305?klay\u305?p view source/kayna\u287?\u305? g\f0\'f6r\'fcnt\'fcle se\'e7ene\f1\u287?ini se\f0\'e7eriz.\par
+\par
+Bir etiketin nas\f1\u305?l davranmas\u305? gerekti\u287?i hakk\u305?nda bilgi i\f0\'e7eren etiketin i\'e7indeki metne De\f1\u287?i\'baken denir. A\'baa\u287?\u305?daki \f0\'f6rnekte body etiketinin i\'e7indeki bgcolor ifadesi de\f1\u287?i\'bakendir ve arkaplan rengini belirler. \f0\'c7o\f1\u287?u etiket iste\u287?e ba\u287?l\u305? olarak ya da gerekti\u287?i i\f0\'e7in ba\f1\u287?\u305?ms\u305?z de\u287?i\'bakenleri kabul eder.\par
+\par
+<body bgcolor="yellow">\par
+\par
+\f0\'c7ift tarafl\f1\u305? etiketler i\f0\'e7i\'e7e ge\'e7ebilirler ama dikkat edilmesi gereken nokta en son a\'e7\f1\u305?lan etiketin en \f0\'f6nce kapat\f1\u305?lmas\u305?d\u305?r. A\'baa\u287?\u305?da yanl\u305?\'ba ve do\u287?ru uyguluma \f0\'f6rne\f1\u287?i verilmi\'batir.\par
+\par
+<b><i>Bu bir yanl\u305?\'ba \f0\'f6rnektir. </b></i>\par
+<b><i>Do\f1\u287?rusu budur. </i></b>\par
+\par
+<br> ve <hr> gibi tek tarafl\u305? etiketler , <br /> ve <hr /> \'baeklinde yaz\u305?lmal\u305?d\u305?r.\par
+\par
+Ba\'baa D\f0\'f6n\par
+\par
+BAS\f1\u304?T HTML ET\u304?KETLER\u304?\par
+Ba\'bal\u305?klar:\par
+\par
+6 \f0\'e7e\f1\'bait ba\'bal\u305?k vard\u305?r:<h1>, <h2>, . . . <h6>. Bunlardan en b\f0\'fcy\'fc\f1\u287?\f0\'fc <h1>, en k\'fc\'e7\'fc\f1\u287?\f0\'fc ise <h6>'d\f1\u305?r.\par
+\par
+HTML etiketi\tab Etiketin Web Sayfas\u305?ndaki g\f0\'f6r\'fcnt\'fcs\'fc\par
+ \par
+\par
+<h1>H1 ile yap\f1\u305?lan ba\'bal\u305?k</h1>\par
+<h2>H2 ile yap\u305?lan ba\'bal\u305?k</h2>\par
+<h3>H3 ile yap\u305?lan ba\'bal\u305?k</h3>\par
+<h4>H4 ile yap\u305?lan ba\'bal\u305?k</h4>\par
+<h5>H5 ile yap\u305?lan ba\'bal\u305?k</h5>\par
+<h6>H6 ile yap\u305?lan ba\'bal\u305?k</h6>\par
+H1 ile yap\u305?lan ba\'bal\u305?k\par
+H2 ile yap\u305?lan ba\'bal\u305?k\par
+H3 ile yap\u305?lan ba\'bal\u305?k\par
+H4 ile yap\u305?lan ba\'bal\u305?k\par
+H5 ile yap\u305?lan ba\'bal\u305?k\par
+H6 ile yap\u305?lan ba\'bal\u305?k\par
+Paragraflar, Sat\u305?r bo\'baluklar\u305? ve Yatay \f0\'c7izgiler:\par
+\par
+Paragraflar <p> etiketiyle olu\f1\'baturulur. Paragraf metni <p> ile </p> aras\u305?nda yer al\u305?r. \f0\'d6rne\f1\u287?in:\par
+\par
+<p>Bu bir paragraft\u305?r. </p>\par
+\par
+Paragraf ba\'balatmadan bir sat\u305?r bo\'balu\u287?u yaratmak i\f0\'e7in <br/> etiketi kullan\f1\u305?l\u305?r. \f0\'d6rne\f1\u287?in:\par
+\par
+<p>Paragraf\u305?n ilk sat\u305?r\u305?. <br />Paragraf\u305?n ikinci sat\u305?r\u305?. </p>\par
+\par
+Sayfaya (a\'baa\u287?\u305?daki gibi) yatay \f0\'e7izgi eklemek i\'e7in <hr> etiketini kullan\f1\u305?r\u305?z.\par
+\par
+HTML etiketi\tab Etiketin Web Sayfas\u305?ndaki g\f0\'f6r\'fcnt\'fcs\'fc\par
+ \par
+\par
+<p>Birinci paragraf</p>\par
+<p>\f1\u304?kinci paragraf </p>\par
+<p>\f0\'dc\'e7\'fcnc\'fc paragraf\par
+<br />Alt sat\f1\u305?r </p>\par
+<hr />\par
+Birinci paragraf\par
+\par
+Ikinci paragraf\par
+\par
+\f0\'dc\'e7\'fcnc\'fc paragraf\par
+Alt Sat\f1\u305?r\par
+\par
+Ba\'baa D\f0\'f6n\par
+\par
+MET\f1\u304?NLER\par
+<font color="red" face="arial" size="3">. . </font>\par
+\par
+Color yaz\u305? karakterinin rengini, face yazi tipini (arial, verdana, tahoma gibi), size da boyutunu belirler. Size de\u287?i\'bakeninde kullan\u305?lan rakam 1'den 7'ye kadard\u305?r.\par
+\par
+<font> etiketi HTML 4. 0 'da desteklenmemektedir ama yine de tarac\u305?y\u305?c\u305?lar <font> etiketi ile yap\u305?lm\u305?\'ba bi\f0\'e7imlendirmeyi destekler. Hala pek \'e7ok web sayfas\f1\u305?nda <font> etiketi kullan\u305?lmaktad\u305?r. Ba\'balang\u305?\f0\'e7 seviyesi i\'e7in <font> etiketi kullanmak yeterliyken ilerki seviyeler i\'e7in stilleri kullanman\f1\u305?z tavsiye edilir. (Bkz: Geli\'bami\'ba HTML Dersi Stiller ve Sat\u305?r \u304?\f0\'e7i Kapsay\f1\u305?c\u305?lar\u305? Ba\'bal\u305?klar\u305?)\par
+\par
+Font etiketi ile birlikte a\'baa\u287?\u305?daki tabloda verilen etiketleri kullanarak sayfan\u305?zdaki metinleri bi\f0\'e7imlendirebilirsiniz.\par
+\par
+Etiket\tab A\'e7\f1\u305?klama\tab Uygulama\par
+<b>. . </b>\tab Kal\u305?n bi\f0\'e7imlendirme\tab Metin\par
+<i>. . </i>\tab\f1\u304?talik bi\f0\'e7imlendirme\tab Metin\par
+<u>. . </u>\tab Alt\f1\u305? \f0\'e7izgili bi\'e7imlendirme\tab Metin\par
+<sup>. . </sup>\tab\'dcst simge\tab X2\par
+<sub>. . </sub>\tab Alt simge\tab H2\par
+<code>. . </code>\tab Bilgisayar kodu bi\'e7imi\tab Metin\par
+<blockquote>. . </blockquote>\tab Alinti bi\'e7imi\tab\par
+Metin\par
+Not: Metin bi\'e7imlerken ba\f1\'balad\u305?\u287?\u305?n\u305?z etiketi kapatmay\u305? unutmay\u305?n.\par
+\par
+Renkler :\par
+\par
+HTML dok\f0\'fcmanlar\f1\u305?nda renkler ya \u304?ngilizce isimleriyle, ya da 16'l\u305?k say\u305? d\f0\'fczenindeki "hexadecimal" de\f1\u287?erleriyle belirtilir.\par
+En s\u305?k kullan\u305?lan ve hemen hemen b\f0\'fct\'fcn taray\f1\u305?c\u305?lar\u305?n destekledi\u287?i 16 renk a\'baa\u287?\u305?dakilerdir:\par
+\par
+Renk\tab Renk adi:\tab Renk\tab Renk adi:\par
+ \tab aqua\tab  \tab black\par
+ \tab blue\tab  \tab fuchsia\par
+ \tab gray\tab  \tab green\par
+ \tab lime\tab  \tab maroon\par
+ \tab navy\tab  \tab olive\par
+ \tab purple\tab  \tab red\par
+ \tab silver\tab  \tab teal\par
+ \tab white\tab  \tab yellow\par
+Web renkleri ile ilgili ayr\u305?nt\u305?l\u305? bilgiyi buradan bulabilirsiniz.\par
+\par
+\f0\'d6rnek :\par
+\par
+<body bgcolor="green">\par
+\par
+Bu \'f6rnekte sayfan\f1\u305?n arkaplan rengi ye\'bail olur.\par
+\par
+<body bgcolor="#008000"> ayn\u305? sonucu verir.\par
+\par
+\f0\'d6rnek :\par
+\par
+<font color="#4B0082"> Font rengi "indigo" oldu. </font> Etiketi kapatt\f1\u305?\u287?\u305?m\u305?z i\f0\'e7in tekrar normale d\'f6nd\'fc.\par
+\par
+Ba\f1\'baa D\f0\'f6n\par
+L\f1\u304?NKLER:\par
+Linkler <a>. . . </a> etiketi i\f0\'e7inde, href="" komutuyla belirtilir.\par
+\par
+\'d6rnek:\par
+\par
+<a href="http://www.metu.edu.tr" target="_blank">ODT\'dc Ana Sayfas\f1\u305?</a>\par
+\par
+ODT\f0\'dc Ana Sayfas\f1\u305?\par
+\par
+Bu \f0\'f6rnekte bir de target de\f1\u287?i\'bakeni verilmi\'batir. Adresi verilen web sayfas\u305?n\u305?n ba\'baka bir pencerede a\f0\'e7\f1\u305?lmas\u305?n\u305? isterseniz target="_blank" komutunu eklemeniz gerekir. Ayn\u305? pencerede a\f0\'e7\f1\u305?lmas\u305?n\u305? isterseniz ilgili de\u287?i\'bakeni target="_top" \'baeklinde yazabilirsiniz. Hi\f0\'e7 bir \f1\'baey yaz\u305?lmazsa da sayfa ayn\u305? pencerede a\f0\'e7\f1\u305?l\u305?r.\par
+\par
+title de\u287?i\'bakenini kullanarak da fare linkin \f0\'fczerine geldi\f1\u287?inde g\f0\'f6z\'fckecek link a\'e7\f1\u305?klamas\u305?n\u305? ekleyebilirsiniz. A\'baa\u287?\u305?daki \f0\'f6rnekte fareyle linkin \'fczerine gelip beklerseniz Orta Do\f1\u287?u Teknik \f0\'dcniversitesi yaz\f1\u305?s\u305?n\u305? g\f0\'f6receksiniz.\par
+\par
+<a href="http://www.md-12.com" target="_blank" title="Ki\f1\'baisel Sayfam i\f0\'e7in t\f1\u305?klay\u305?n" >Mustafa Dalc\u305?</a>\par
+\par
+Mustafa Dalc\u305?\par
+\par
+E\u287?er haz\u305?rlad\u305?\u287?\u305?n\u305?z dok\f0\'fcmanlar aras\f1\u305?nda bir ba\u287?lant\u305? kurmak istiyorsan\u305?iz, <a> etiketini a\'baa\u287?\u305?daki gibi kullanmal\u305?s\u305?n\u305?z.\par
+\par
+<a href="dosyaadi.HTML">\f0\'d6nceki sayfa</a>\par
+\par
+Bir e-posta adresine link vermek istiyorsan\f1\u305?z:\par
+\par
+<a href="mailto:mail@mail.com.tr">E-posta atmak i\f0\'e7in t\f1\u305?klay\u305?n. </a>\par
+\par
+E-posta atmak i\f0\'e7in t\f1\u305?klay\u305?n.\par
+\par
+Bu linke t\u305?kland\u305?\u287?\u305?nda bilgisayarda kurulu varsay\u305?lan e-posta okuma program\u305? a\f0\'e7\f1\u305?l\u305?r ve g\f0\'f6nderilecek adres b\'f6l\'fcm\'fcnde etiket i\'e7inde belirtilen adres yazar.\par
+\par
+Ayn\f1\u305? dok\f0\'fcman i\'e7inde ba\f1\u287?lant\u305? kurmak istersek tutturucu noktalar\u305? (anchor points) kullan\u305?r\u305?z. Tutturucu HTML sayfas\u305?nda bir yer i\'baaretidir. \u304?smi ile bir b\f0\'f6lgeyi belirler ve bu tutturucuya bir link verebilirsiniz. Bu sayfadaki her konu ba\f1\'bal\u305?\u287?\u305?na bir tutturucu belirlenmi\'batir. Sayfa ba\'ba\u305?ndaki listede herhangi bir ba\'bal\u305?\u287?a t\u305?klad\u305?\u287?\u305?n\u305?zda sayfa i\f0\'e7indeki ilgili konu ba\f1\'bal\u305?\u287?\u305?na gider. \f0\'d6rnek olarak Resim Ekleme b\'f6l\'fcm\'fcne gitmek i\'e7in buraya t\f1\u305?klayabilirsiniz. Tutturucular\u305?n kullan\u305?m\u305? a\'baa\u287?\u305?daki gibidir.\par
+\par
+Linkler ba\'bal\u305?\u287?\u305?na a\'baa\u287?\u305?daki gibi bir tutturucu belirleriz.\par
+\par
+<a name="link">Linkler</a>\par
+\par
+Sayfan\u305?n herhangi bir b\f0\'f6l\'fcm\'fcnde yukar\f1\u305?da belirledi\u287?imiz tutturucuya a\'baa\u287?\u305?daki gibi link veririz\par
+\par
+<a href="#link">Linklere git</a>\par
+\par
+Sa\u287? tarafta bulunan Ba\'baa D\f0\'f6n linkleri de bu \f1\'baekilde haz\u305?rlanm\u305?\'bat\u305?r.\par
+\par
+Ba\'baa D\f0\'f6n\par
+\par
+RES\f1\u304?M EKLEME\par
+Resim ekleme:\par
+\par
+<img src="resim.jpg" />\par
+\par
+\'baeklinde olur. Dikkat etmemiz gereken kulanaca\u287?\u305?m\u305?z resmin dizin yap\u305?s\u305?d\u305?r.\par
+\par
+Ba\u287?\u305?ms\u305?z De\u287?i\'bakenler :\par
+\par
+<img src="" width="" height="" border="" alt="" />\par
+\par
+alt: Resme a\f0\'e7\f1\u305?klama vermemizi sa\u287?lar. Fareyi resmin \f0\'fcst\'fcne getirdi\f1\u287?imizde, alt de\u287?i\'bakeninde yaz\u305?lan a\f0\'e7\f1\u305?klama ekranda \f0\'e7\f1\u305?kar. E\u287?er resim a\f0\'e7\f1\u305?lmazsa, onun yerine a\f0\'e7\f1\u305?klama g\f0\'f6r\'fcn\'fcr.\par
+\par
+src : Resim dosyas\f1\u305?n\u305?n kayna\u287?\u305?n\u305? belirtir.\par
+\par
+** E\u287?er web sayfas\u305?n\u305?n arka plan\u305?nda bir imaj\u305?n \f0\'e7\f1\u305?kmas\u305? istenirse:\par
+\par
+<body background="resim.jpg"> \'baeklinde yaz\u305?l\u305?r.\par
+\par
+Resimleri linke d\f0\'f6n\'fc\f1\'bat\f0\'fcrmek i\'e7in <a> etiketi ile <img> etiketini i\'e7i\'e7e kullan\f1\u305?r\u305?z.\par
+\par
+<a href="http://www.metu.edu.tr" target="_blank"><img src="odtu.jpg" /></a>\par
+\par
+Not: Resimlerin width ve height de\u287?i\'bakenlerini belirtmeniz sayfan\u305?z\u305?n y\f0\'fcklenirken \f1\'baeklinin bozulmas\u305?n\u305? \f0\'f6nler.\par
+\par
+Ba\f1\'baa D\f0\'f6n\par
+\par
+L\f1\u304?STELER:\par
+\f0\'dc\'e7 \'e7esit liste vard\f1\u305?r:\par
+i. S\u305?ral\u305? Liste(Ordered List):\par
+\par
+\f0\'d6rnek:\par
+\par
+HTML etiketi\tab Etiketin Web Sayfas\f1\u305?ndaki g\f0\'f6r\'fcnt\'fcs\'fc\par
+<ol type="1">\'c7erezler:\par
+<li>Kavurga\par
+<li>\'c7ekirdek\par
+<li>M\f1\u305?s\u305?r\par
+<li>Cips\par
+</ol>\par
+<ol type="a">I\f0\'e7kiler:\par
+<li>Bira\par
+<li>Votka\par
+<li>\f1\'aaarap\par
+<li>Viski\par
+<li>Rak\u305?\par
+</ol>\tab\par
+\f0\'c7erezler:\par
+Kavurga\par
+\'c7ekirdek\par
+M\f1\u305?s\u305?r\par
+Cips\par
+I\f0\'e7kiler:\par
+Bira\par
+Votka\par
+\f1\'aaarap\par
+Viski\par
+Rak\u305?\par
+\f0\'d6rnekte g\'f6r\'fcld\'fc\f1\u287?\f0\'fc gibi type de\f1\u287?i\'bakeni s\u305?ral\u305? listenin t\f0\'fcr\'fcn\'fc belirler. Type de\f1\u287?i\'bakeni i\f0\'e7in a\f1\'baa\u287?\u305?daki de\u287?erlerden biri kullan\u305?labilir:\par
+\par
+type: \{1, a, A, I, i\}\par
+\par
+Listeyi start de\u287?i\'bakeni ile istedi\u287?imiz say\u305?dan baslatabiliriz:\par
+\par
+\f0\'d6rnek:\par
+\par
+HTML etiketi\tab Etiketin Web Sayfas\f1\u305?ndaki g\f0\'f6r\'fcnt\'fcs\'fc\par
+<ol start="199">\'c7erezler:\par
+<li>Kavurga\par
+<li>\'c7ekirdek\par
+<li>M\f1\u305?s\u305?r\par
+<li>Cips\par
+</ol>\tab\par
+\f0\'c7erezler:\par
+Kavurga\par
+\'c7ekirdek\par
+M\f1\u305?s\u305?r\par
+Cips\par
+ii. S\u305?ras\u305?z Liste(Unordered List):\par
+\par
+\f0\'d6rnek:\par
+\par
+HTML etiketi\tab Etiketin Web Sayfas\f1\u305?ndaki g\f0\'f6r\'fcnt\'fcs\'fc\par
+<ul type="circle">\'c7erezler:\par
+<li>Kavurga</li>\par
+<li>\'c7ekirdek</li>\par
+<li>M\f1\u305?s\u305?r</li>\par
+<li>Cips</li>\par
+</ul>\par
+<ul type="disc">I\f0\'e7kiler:\par
+<li>Bira</li>\par
+<li>Votka</li>\par
+<li>\f1\'aaarap</li>\par
+<li>Viski</li>\par
+<li>Rak\u305?</li>\par
+</ul>\tab\par
+\f0\'c7erezler:\par
+Kavurga\par
+\'c7ekirdek\par
+M\f1\u305?s\u305?r\par
+Cips\par
+I\f0\'e7kiler:\par
+Bira\par
+Votka\par
+\f1\'aaarap\par
+Viski\par
+Rak\u305?\par
+Benzer \'baekilde burada da type de\u287?i\'bakeni s\u305?ras\u305?z listenin i\'baaretini belirler. Type de\u287?i\'bakeni i\f0\'e7in a\f1\'baa\u287?\u305?daki de\u287?erlerden biri kullan\u305?labilir:\par
+\par
+type:\{square, disc, circle\}\par
+\par
+iii. Tan\u305?mlama Listeleri (Definition List):\par
+\par
+\f0\'d6rnek:\par
+\par
+HTML etiketi\tab Etiketin Web Sayfas\f1\u305?ndaki g\f0\'f6r\'fcnt\'fcs\'fc\par
+<dl>\par
+<dt>Karbonhidrat ve ben\par
+<dd>En \'e7ok bol karbonhidratl\f1\u305? yemekleri severim, \f0\'f6zellikle de makarna ve t\'fcrevlerini. Lazanya favorimdir. Pizza ve mant\f1\u305?ya da bay\u305?l\u305?r\u305?m. </dd></dt>\par
+<dt>Sebze ve ben\par
+<dd>Sebzeyle aram pek iyi de\u287?ildir ama taze fasulye olduk\f0\'e7a lezziz bir yiyecektir. Onun d\f1\u305?\'ba\u305?nda dolma, sarma da g\f0\'fczeldir. </dd></dt>\par
+<dt>Et ve ben\par
+<dd>Et seven bir insanimdir. Her \'e7esit kebabi afiyetle yerim. K\f1\u305?rm\u305?z\u305? olsun, beyaz olsun, hemen hemen b\f0\'fct\'fcn etleri yerim. Bal\f1\u305?k se\f0\'e7erim ama. </dd></dt>\par
+</dl>\tab\par
+Karbonhidrat ve ben\par
+En \'e7ok bol karbonhidratl\f1\u305? yemekleri severim, \f0\'f6zellikle de makarna ve t\'fcrevlerini. Lazanya favorimdir. Pizza ve mant\f1\u305?ya da bay\u305?l\u305?r\u305?m.\par
+Sebze ve ben\par
+Sebzeyle aram pek iyi de\u287?ildir ama taze fasulye olduk\f0\'e7a lezziz bir yiyecektir. Onun d\f1\u305?\'ba\u305?nda dolma, sarma da g\f0\'fczeldir.\par
+Et ve ben\par
+Et seven bir insan\f1\u305?md\u305?r. Her \f0\'e7esit kebab\f1\u305? afiyetle yerim. K\u305?rm\u305?z\u305? olsun, beyaz olsun, hemen hemen b\f0\'fct\'fcn etleri yerim. Bal\f1\u305?k se\f0\'e7erim ama.\par
+Ba\f1\'baa D\f0\'f6n\par
+\par
+TABLOLAR\par
+Tablolar <table>. . . . </table> etiketleri aras\f1\u305?nda olu\'baturulur. <table> etiketinden sonra daima <tr> gelir. Her sat\u305?r tan\u305?mland\u305?\u287?\u305?nda <tr>, her h\f0\'fccre tan\f1\u305?mland\u305?\u287?\u305?nda da <td> etiketi kullan\u305?l\u305?r.\par
+\par
+\f0\'d6rnek :\par
+\par
+<table border="1">\par
+<tr><td>1. h\'fccre</td><td>2. h\'fccre</td><td>3. h\'fccre</td></tr>\par
+<tr><td>4. h\'fccre</td><td>5. h\'fccre</td><td>6. h\'fccre</td></tr>\par
+</table>\par
+\par
+1. h\'fccre\tab 2. h\'fccre\tab 3. h\'fccre\par
+4. h\'fccre\tab 5. h\'fccre\tab 6. h\'fccre\par
+Ba\f1\u287?\u305?ms\u305?z De\u287?i\'bakenler:\par
+\par
+<table border="" cellpadding="" cellspacing="" width="" height="" bgcolor="" align="" valign="">\par
+<td height="" width="" bgcolor="" align="" valign="" colspan="" rowspan="">\par
+\par
+border : \f0\'c7er\'e7evenin kal\f1\u305?nl\u305?\u287?\u305?n\u305? belirler. border="0" dersek tabloda \f0\'e7er\'e7eve bulunmaz, bu miktar\f1\u305? artt\u305?rd\u305?k\f0\'e7a \'e7er\'e7evenin kal\f1\u305?nl\u305?\u287?\u305? da artar.\par
+\par
+cellpadding , cellspacing : H\f0\'fccre elemanlar\f1\u305?n\u305?n s\u305?n\u305?rlara olan uzakl\u305?\u287?\u305? cellpadding, sat\u305?r ve s\f0\'fctunlar\f1\u305?n uzakl\u305?\u287?\u305? ise cellspacing de\u287?i\'bakeni ile belirtilir.\par
+\par
+bgcolor: <table bgcolor="red"> \'baeklinde kullanarak b\f0\'fct\'fcn tablo ya da <td bgcolor= "red"> \f1\'baeklinde sadece tek bir h\f0\'fccre renklendirilir.\par
+\par
+align : H\'fccredeki eleman\f1\u305?n yatay konumunu belirler ve "right, left, center" opsiyonlar\u305? ile kullan\u305?l\u305?r.\par
+\par
+valign : H\f0\'fccre eleman\f1\u305?n\u305?n d\f0\'fc\f1\'baey konumunu belirler ve opsiyonlar\u305? "top, bottom, middle"d\u305?r.\par
+\par
+colspan , rowspan : Ayn\u305? sat\u305?rdaki h\f0\'fccreleri birle\f1\'batirmek i\f0\'e7in colspan, ayn\f1\u305? s\f0\'fctundaki h\'fccreleri birle\f1\'batirmek i\f0\'e7in de rowspan de\f1\u287?i\'bakeni kullan\u305?l\u305?r. Birle\'batirilen h\f0\'fccreye ait <td>. . </td> etiketi silinir.\par
+\par
+\'d6rnek :\par
+\par
+<table border="1">\par
+<tr><td>1. h\'fccre</td><td>2. h\'fccre</td><td>3. h\'fccre</td></tr>\par
+<tr><td rowspan="2">4. h\'fccre</td><td colspan="2">5. h\'fccre</td></tr>\par
+<tr><td>6. h\'fccre</td><td>7. h\'fccre</td></tr>\par
+</table>\par
+\par
+1. h\'fccre\tab 2. h\'fccre\tab 3. h\'fccre\par
+4. h\'fccre\tab 5. h\'fccre\par
+6. h\'fccre\tab 7. h\'fccre\par
+S\par
+FORMLAR\par
+Formlar <form>. . . </form> etiketleri aras\f1\u305?nda olu\'baturulur. Form bilgilerini action de\u287?i\'bakeninin i\f0\'e7ine yazd\f1\u305?\u287?\u305?n\u305?z dosyaya veri olarak g\f0\'f6nderebilirsiniz. Formlar sayesinde anket ve geribildirim uygulamalar\f1\u305? haz\u305?rlayabilirsiniz. Ayr\u305?nt\u305?l\u305? bilgi i\f0\'e7in buraya t\f1\u305?klay\u305?n.\par
+\par
+\f0\'d6rnek:\par
+\par
+<form name="kimlik" action="gonder.php" method="get">\par
+Isim/soyad : <input type="text" size="20" name="isim"><br>\par
+Do\f1\u287?um yeri : <input type="text" size="20" name="dogumyer" ><br>\par
+Do\u287?um tarihi : <input type="text" size="10" name="dogumtarih" ><br>\par
+Cinsiyet : <input type="radio" name="cins" value="erkek" > Erkek <input type="radio" name="cins" value="kiz"> Kiz<br>\par
+Hobiler:<br>\par
+<input type="checkbox" name="muzik" >M\f0\'fczik dinlemek<br>\par
+<input type="checkbox" name="manti" >Manti a\'e7mak<br>\par
+<input type="checkbox" name="bungee" > Bungee Jumping<br>\par
+<input type="checkbox" name="aikido">Aikido<br>\par
+<input type="checkbox" name="halay">Halay \'e7ekmek<br>\par
+<input type="checkbox" name="diger">Di\f1\u287?er :<br>\par
+<textarea rows="4" cols="30" name="diger"></textarea><br>\par
+\'aaifrenizi giriniz:<br>\par
+<input type="Password" size="15"><br>\par
+<input type="submit" value="G\f0\'d6NDER"> <input type="reset" value="SIL">\par
+</form>\par
+\par
+Isim/soyad : \par
+\par
+Do\f1\u287?um yeri : \par
+\par
+Do\u287?um tarihi : \par
+\par
+Cinsiyet :  Erkek  Kiz\par
+Hobiler:\par
+M\f0\'fczik dinlemek\par
+ Mant\f1\u305? a\f0\'e7mak\par
+ Bungee Jumping\par
+Aikido\par
+Halay \'e7ekmek\par
+Di\f1\u287?er :\par
+\par
+\'aaifrenizi giriniz:\par
+\par
+ \par
+action: Formun g\f0\'f6nderilece\f1\u287?i adresi belirtir.\par
+method="get":Formdaki bilgiler ba\'baka bir dosyaya g\f0\'f6nderilecekse kullan\f1\u305?l\u305?r.\par
+method="post":Formdaki bilgiler bir adrese postalanacaksa kullan\u305?l\u305?r.\par
+type="text" : Tek sat\u305?rl\u305?k bir metin alan\u305? a\f0\'e7ar.\par
+size="" :Bu metin alan\f1\u305?n\u305?n boyutunu belirler.\par
+type="checkbox" : \f0\'c7ok se\'e7enekli bir sorunun birden fazla yan\f1\u305?t\u305?n\u305? almam\u305?z\u305? sa\u287?lar.\par
+type="radio" : Tek se\f0\'e7enekli bir sorunun tek yan\f1\u305?t\u305? al\u305?n\u305?r.\par
+type="submit" : formu action'la belirtilen dosyaya y\f0\'f6nlendiren bir buton yarat\f1\u305?r.\par
+type="reset" :Bu butona bas\u305?nca form bo\'ba hale gelir\par
+type="password" : Bir password alan\u305? olusturur. Buraya girilen her karakter * \'baeklinde g\f0\'f6r\'fcn\'fcr.\par
+<textarea rows="" cols=""> :type="text" gibi tek sat\f1\u305?rl\u305? de\u287?il de \f0\'e7ok sat\f1\u305?rl\u305? bir metin alan\u305? istiyorsak bu etiketi kullaniriz. cols metin alan\u305?n\u305?n uzunlu\u287?unu, rows ise y\f0\'fcksekli\f1\u287?ini pixel cinsinden verir.\par
+\par
+Listeleme:\par
+\par
+Select ve option etiketlerini kullanarak se\f0\'e7imlik liste (men\'fc) olu\f1\'baturabiliriz. Option etiketi ile belirtilen her bir de\u287?er listenin bir elaman\u305?n\u305? olu\'baturur ve fareyle se\f0\'e7ilen bu elemanlardan biri select etiketinde belirtilen de\f1\u287?i\'bakenin de\u287?eri haline gelir.\par
+\par
+\f0\'d6rnek:\par
+\par
+<select name="otolar">\par
+<option>Alfa Romeo</option>\par
+<option>BMW</option>\par
+<option>Peugeot</option>\par
+<option>Renault</option>\par
+<option>Seat</option>\par
+<option>Lada</option>\par
+</select>\par
+\lang31\par
+}
+ 
