@@ -1,0 +1,18 @@
+pipes=[0,1,0,2,1,0,1,3,2,1,2,1]
+area =0
+ind = 0 #ind =index
+while ind< len(pipes)-1:
+  for i in range(ind+1, len(pipes)):
+    pipe =pipes[i]
+    if pipe >= pipes[ind]:
+      num_pipes = i-ind-1  #sondaki dahil olmadigi icin -1 cikartiyoruz
+      area+=(min(pipe,pipes[ind])*num_pipes)-sum(pipes[ind+1:i])
+      ind=i
+      break
+  else :
+    p = max(pipes[ind+1:])
+    new_ind= pipes[ind+1:].index(p) +ind +1
+    num_pipes =new_ind -ind-1
+    area+=(p*num_pipes) -sum(pipes[ind+1:new_ind])
+    ind = new_ind
+print(area)
