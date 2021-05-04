@@ -13,4 +13,3 @@ def isValid(s):
 
 combination = input('Write a string that contains only `(`, `)`, `{`, `}`, `[` and `]`: ')
 print(isValid(combination))
-print(isValid("()"))
