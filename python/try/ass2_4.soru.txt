@@ -1,0 +1,6 @@
+select tracks.AlbumId, albums.Title, sum(Milliseconds) as total_duracation
+from tracks
+inner join albums on tracks.AlbumId = albums.AlbumId
+group by tracks.AlbumId ,albums.Title 
+having min(Milliseconds)> 340000
+order by total_duracation desc;

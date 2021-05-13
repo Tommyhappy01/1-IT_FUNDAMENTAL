@@ -1,0 +1,38 @@
+1. Soru
+SELECT albums.Title,count(TrackId)
+FROM tracks
+join albums
+on tracks.AlbumId= albums.AlbumId
+group by albums.Title
+order by count(TrackId) DESC;
+
+2. Soru
+SELECT tracks.Name as şarkı_adı,albums.Title as albüm_adı
+FROM tracks
+join albums
+on tracks.AlbumId= albums.AlbumId
+
+3.soru
+SELECT albums.AlbumId,albums.Title,Tracks.Name as Şarkı_adı,min(tracks.Milliseconds) as en_kısa_şarkı_süresi
+FROM albums
+join tracks
+on tracks.AlbumId= albums.AlbumId
+group by albums.AlbumId
+order by Milliseconds desc;
+
+4.soru
+SELECT albums.AlbumId,albums.Title, sum(Tracks.Milliseconds)
+FROM albums
+join tracks
+on tracks.AlbumId= albums.AlbumId
+group by albums.AlbumId
+order by sum(tracks.Milliseconds) desc;
+
+5.soru
+SELECT albums.AlbumId,albums.Title, sum(Tracks.Milliseconds)
+FROM albums
+join tracks
+on tracks.AlbumId= albums.AlbumId
+group by albums.AlbumId
+having sum(tracks.Milliseconds)>420000
+order by sum(tracks.Milliseconds) desc;

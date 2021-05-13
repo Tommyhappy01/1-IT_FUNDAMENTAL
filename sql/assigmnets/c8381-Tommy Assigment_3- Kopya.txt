@@ -1,0 +1,88 @@
+c8381- Tommy Assigmnet-3
+SINGLE ROW SUBQUERY:
+1.SORU
+SELECT TrackId,
+	   name,
+	   max(Milliseconds) as maximun_duracation
+FROM tracks
+
+SELECT TrackId, name, Milliseconds
+FROM tracks
+WHERE Milliseconds IN
+	(SELECT Milliseconds
+	 FROM tracks
+	 WHERE Milliseconds
+	 ORDER BY Milliseconds DESC 
+	 LIMIT 1);
+	 
+2. SORU
+SELECT TrackId, name, Milliseconds
+FROM tracks
+WHERE Milliseconds IN
+	(SELECT Milliseconds
+	 FROM tracks
+	 WHERE Milliseconds
+	 ORDER BY Milliseconds  
+	 LIMIT 1);
+3.SORU	 
+SELECT TrackId,name,Bytes
+FROM tracks
+WHERE bytes > 
+	 (SELECT avg(bytes) 
+	  FROM tracks);
+		 
+MULTİ ROW SUBQUERY:
+1.SORU
+SELECT CustomerId,FirstName,LastName
+FROM customers
+where SupportRepId IN
+	(select EmployeeId
+	from employees
+	where FirstName IN
+	("Jane","Margaret"))
+	
+2.SORU
+SELECT customers.CustomerId,customers.FirstName,customers.LastName
+FROM customers
+join employees
+on customers.SupportRepId = employees.EmployeeId
+where employees.FirstName in ("Jane","Margaret")
+
+DDL COMMANDS:
+1.SORU		
+CREATE TABLE courses
+(CourseId INTEGER PRIMARY Key,
+CourseName TEXT NOT NULL,
+EmployeeId INTEGER,
+CoursePrice ,
+FOREIGN KEY (EmployeeId)
+REFERENCES employees(EmployeeId))
+
+2.SORU
+INSERT INTO courses(CourseId,
+CourseName,EmployeeId,CoursePrice)
+VALUES (1,"CLARUSWAY",1,1000),
+(2,"SQL",2,500),
+(3,"SDLC",3,750),
+(4,"GİT",4,500),
+(5,"LİNUX",5,500)		
+		
+select CourseId,
+CourseName,EmployeeId,CoursePrice	
+from courses
+
+3.SORU
+DELETE 
+FROM courses
+WHERE EmployeeId = 5;
+
+4. SORU
+ALTER TABLE courses 
+RENAME startDate;
+
+5. SORU
+ALTER TABLE courses 
+DROP COLUMN CoursePrice;
+
+6.SORU
+DROP TABLE courses

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/ÖKTEN/Desktop/chinook - Kopya.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="3528"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,6:mainalbums"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="albums" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="61"/><column index="2" value="300"/><column index="3" value="59"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">DROP TABLE IF EXISTS vacation_plan;
+CREATE TABLE vacation_plan
+			(place_id INT PRIMARY KEY,
+			Country VARCHAR(20),
+			hotel_name CHAR (20) NOT NULL,
+			EmployeeId INT,
+			Vacation_lenght INT,
+			budget REAL,
+			FOREIGN KEY (EmployeeId) REFERENCES employees(EmployeeId));
+INSERT INTO vacation_plan
+(place_id, country, hotel_name, EmployeeId, vacation_lenght, budget)
+VALUES
+(1, 'Canada', 'Hilton', 1, 5, 10000),
+(2, 'USA', 'Sheraton', 1, 5, 10000),
+(3, 'Turkey', 'Erzincan_plus', 1, 8, 500);
+
+alter table  vacation_plan
+add city TEXT
+
+alter table  vacation_plan
+rename to new_vacation_plan
+
+alter table new_vacation_plan
+rename column city to state;
+
+
+
+  ( customer_id Int Primary key,
+	   first_name text not null,
+	   last_name TEXT not null)
+CREATE table orders2
+       ( order_id Int Primary key,
+	   order_nember int,
+	   customer_id int,
+	   FOREIGN key (customer_id) references customers2(customer_id));
+insert into customers2 (customer_id, first_name, last_name)
+ values(1,&quot;john&quot;,&quot;king&quot;),
+ (2,&quot;jony&quot;,&quot;gold&quot;),
+ (3,&quot;tony&quot;,&quot;alert&quot;)
+ 
+insert into customers2 (customer_id, first_name, last_name)
+ values(4,&quot;ali&quot;,&quot;veli&quot;)
+insert into orders2 (order_id, order_nember, customer_id)
+ values(1,101,1),
+ (2,102,2),
+ (3,103,3)</sql><current_tab id="0"/></tab_sql></sqlb_project>

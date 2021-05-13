@@ -1,0 +1,35 @@
+SELECT invoiceId,CustomerId,total
+fROM  invoices
+order by CustomerId ,total desc;
+
+SELECT InvoiceId,CustomerId,Total
+FROM invoices
+order by total desc,CustomerId  ;
+
+Önce CustomerId olursa önce onu sıraladı,
+daha sonra sıraladıklarında tutarı sıraladı.
+Yani CustomerId küçükten büyüğe sıralanırken
+ıd no 1 olan ların faturaları büyükten küçüğe sıralandı.
+Diğer soruda ise;
+Total ilk olduğundan onu sıralarken
+Customer Id küçükten büyüe sıralandı.
+
+
+SELECT *
+FROM invoices
+where Total >=10
+limit 10;
+
+SELECT *
+FROM invoices
+where Total <10
+limit 5;
+
+SELECT Name
+FROM tracks
+where Name like "B%s";
+
+SELECT *
+FROM invoices
+where BillingCountry in("USA","Germany","Norway","Canada")
+and InvoiceDate between "2010-01-01"  and  "2011-01-01" ;
