@@ -1,0 +1,7 @@
+It opens the file and returns a corresponding file-like object. If the file cannot be opened, an OSError is raised. Pay attention to the type of my_file. We have created a file-like object. So we can apply different kinds of methods to my_file.
+
+i
+ü
+ç
+ş
+ö
